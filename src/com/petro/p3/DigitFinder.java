@@ -5,24 +5,16 @@ public class DigitFinder {
     static void findDigit(int number, int digit) {
 
         int num = number;
-        int currentDigit = 0;
         int encounteredDigits = 0;
-        boolean notEnd = true;
 
         do {
-            currentDigit = num % 10;
-
-            if (digit == currentDigit) {
+            if (num %10 == digit) {
                 encounteredDigits++;
             }
 
             num /= 10;
 
-            if (num == 0) {
-                notEnd = false;
-            }
-
-        } while (notEnd);
+        } while (num != 0);
 
         System.out.printf("Research number: %20d%n" +
                 "Digit to find: %22d%n" +

@@ -4,12 +4,14 @@ public class Statistics {
 
     private static int sum;
     public static int count;
-    public static int maxValue = Integer.MIN_VALUE;
-    public static int minValue = Integer.MAX_VALUE;
+    public static int maxValue;
+    public static int minValue;
     public static double averageValue;
 
 
     public static void inputNumbers (int ... numbers){
+
+        minValue = maxValue = numbers[0];
 
         for (int number : numbers) {
             count ++;

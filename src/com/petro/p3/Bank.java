@@ -64,15 +64,11 @@ public class Bank {
      *  post condition
      */
     public static void method1(){
-        boolean notEnd = true;
         do {
             years++;
             currentDeposit += currentDeposit * rate/100;
-            if (currentDeposit >= targetSum) {
-                printResult();
-                notEnd = false;
-            }
-        } while (notEnd);
+        } while (currentDeposit < targetSum);
+        printResult();
     }
 
     /**
@@ -83,10 +79,10 @@ public class Bank {
             years++;
             currentDeposit += currentDeposit * rate/100;
             if (currentDeposit >= targetSum) {
-                printResult();
                 break;
             }
         } while (true);
+        printResult();
 
     }
 
@@ -100,10 +96,10 @@ public class Bank {
             years++;
             currentDeposit += currentDeposit * rate / 100;
             if (currentDeposit >= targetSum) {
-                printResult();
                 break block;
             }
         }
+        printResult();
     }
 
     /**
@@ -158,23 +154,19 @@ public class Bank {
             years++;
             currentDeposit += currentDeposit * rate/100;
             if (currentDeposit >= targetSum) {
-                printResult();
                 break;
             }
         }
+        printResult();
 
     }
     public static void method8(){
 
-        boolean notEnd = true;
-        while (notEnd) {
+        while (currentDeposit < targetSum) {
             years++;
             currentDeposit += currentDeposit * rate/100;
-            if (currentDeposit >= targetSum) {
-                printResult();
-                notEnd = false;
-            }
         }
+        printResult();
 
     }
 
