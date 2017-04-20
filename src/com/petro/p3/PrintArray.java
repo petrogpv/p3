@@ -2,13 +2,13 @@ package com.petro.p3;
 
 public class PrintArray {
 
-    public static int [] array = {0,1,2,3,4};
+    public static int  arraySize = 5;
 
     public static void printLeft (){
 
-        for (int i = 0; i < array.length ; i++) {
+        for (int i = 0; i < arraySize; i++) {
             for (int j = i; j >= 0 ; j--) {
-                System.out.print(array[j]+ " ");
+                System.out.print(j+ " ");
             }
                 System.out.println();
         }
@@ -18,16 +18,16 @@ public class PrintArray {
 
         int kLimit = 0;
 
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 1; i <= arraySize ; i++) {
 
-            kLimit = array.length * 2 - i * 2 - 3;
+            kLimit = arraySize * 2 - i * 2 - 1;
 
-            for (int k = kLimit; k >= 0 ; k--) {
+            for (int k = 0; k <= kLimit ; k++) {
                 System.out.print(" ");
             }
 
-            for (int j = i; j >= 0 ; j--) {
-                System.out.print((array[j] + 1) + " ");
+            for (int j = i; j >= 1 ; j--) {
+                System.out.print(j + " ");
             }
             System.out.println();
         }
@@ -36,18 +36,18 @@ public class PrintArray {
 
         int kLimit = 0;
 
-        for (int i = 0; i < array.length ; i++) {
+        for (int i = 0; i < arraySize ; i++) {
             for (int j = i; j >= 0 ; j--) {
-                System.out.print(array[j]+ " ");
+                System.out.print(j + " ");
             }
 
-            kLimit = array.length * 4 - i *4 - 5;
+            kLimit = arraySize * 4 - i *4 - 5;
 
-            for (int k = kLimit; k >= 0 ; k--) {
+            for (int k = 0; k <= kLimit ; k++) {
                 System.out.print(" ");
             }
             for (int j = i; j >= 0 ; j--) {
-                System.out.print((array[j] + 1) + " ");
+                System.out.print(j + 1 + " ");
             }
             System.out.println();
         }

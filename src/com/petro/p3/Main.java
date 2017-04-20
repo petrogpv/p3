@@ -6,10 +6,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        digitFinder();      // Task 1
+//        digitFinder();      // Task 1
 //        statistics();       // Task 2
 //        bank(7);             // Task 3
-//        printArray();       // Task 4
+        printArray();       // Task 4
 
 
     }
@@ -54,8 +54,8 @@ public class Main {
     }
     public static void printArray(){
 
-        PrintArray.printLeft();
-        PrintArray.printRight();
+//        PrintArray.printLeft();
+//        PrintArray.printRight();
         PrintArray.printBoth();
     }
 
